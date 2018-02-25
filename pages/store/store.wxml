@@ -1,0 +1,39 @@
+<view class="check_address">
+  <view class='addressmian' bindtap='gomap'>
+    <image src='/images/address1.png'></image>
+    <input value='{{addressMain}}' class='c_adipt'></input>
+    <view class='addresslistcion'></view>
+  </view>
+  
+  <view class='findaddress'>
+    <image src='/images/ss.png'></image>
+    <input type='text' class='ssaddress' placeholder='{{addressMain}}'></input>
+  </view>
+</view>
+
+<view style='margin-top:96rpx'>
+<block wx:for="{{meunIfo}}" wx:key="index">
+  <view class='meunbox'>
+    <view bindtap='showMenu' data-index="{{index}}">
+      <view class="meunname {{selectIndex==index?'meuncolor':'meuncolor1'}}">
+        {{item.title}} {{item.eare}}
+      </view>
+      <view class='meunaddressdetil'>
+        <image src='/images/address.png' class='address_cion'></image>{{item.address}} {{item.lu}}
+        <view style='margin-left:34rpx'>{{item.hao}}</view>
+      </view>
+      <view class='meunaddressdetil'>
+        <image src='/images/time.png' class='meuntime'></image>{{item.time}}
+      </view>
+      <view class='meunaddressdetil'>
+        <image src='/images/tel.png' class='meuntime'></image>{{item.tel}}
+      </view>
+      <view class='meun_cion' wx:if="{{item.canuse==false}}">
+        <image src='/images/cantuse.png' class='cantgive'></image>
+        <image class='meunjh' src='/images/right_cion.png'></image>
+      </view>
+    </view>
+    <view class='addmeun' wx:if="{{selectIndex==index}}" bindtap='gotoMenu'>进入菜单</view>
+  </view>
+</block>
+</view>

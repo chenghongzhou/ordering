@@ -1,0 +1,21 @@
+<!--pages/personal/personal.wxml-->
+<view class='personal'>
+  <view class='per-tlt'>
+    <view class='pic'>
+      <image src='https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1298896649,1089344304&fm=173&s=62D2A166ECC214D68B21E99A0100C091&w=218&h=146&img.JPEG'></image>
+    </view>
+    <view class='name'>张三</view>
+  </view>
+  <view class='per-con'>
+    <view class='item' bindtap='go_adress'>
+      <image src='/images/my_adress.png' class='icon'></image>
+      <text>我的收货地址</text>
+      <image src='/images/right_cion.png' class='icon row'></image>
+    </view>
+    <view class='item' bindtap='go_discount'>
+      <image src='/images/my_quan.png' class='icon'></image>
+      <text>我的优惠券</text>
+      <image src='/images/right_cion.png' class='icon row'></image>
+    </view>
+  </view>
+</view>

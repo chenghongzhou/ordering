@@ -1,0 +1,250 @@
+.orderbox {
+  background: #f2f2f2;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+}
+.checkthings .thingsltbox:last-child{
+  border: 0px;
+}
+.orderifotp {
+  width: 100%;
+  background: #fff;
+}
+
+.checkthings {
+  padding-top: 40rpx;
+}
+
+.thingstitle {
+  font-size: 30rpx;
+  font-weight: 600;
+  padding-left: 24rpx;
+}
+
+.thingstyle {
+  font-size: 24rpx;
+  color: #333;
+}
+
+.thingsall {
+  font-size: 20rpx;
+  color: #999;
+  word-break: break-all;
+  line-height: 30rpx;
+  margin-top: 18rpx;
+}
+
+.thingsltbox {
+  border-bottom: 1px solid #c1c1c1;
+  padding: 30rpx 24rpx;
+}
+
+.typetitle {
+  font-size: 30rpx;
+  color: #333;
+  font-weight: 600;
+  position: relative;
+}
+
+.checkcion {
+  display: block;
+  position: absolute;
+  top: 8rpx;
+  right: 0rpx;
+  width: 14rpx;
+  height: 25rpx;
+}
+
+.pricetype {
+  font-size: 24rpx;
+  color: #333;
+  margin-top: 28rpx;
+  position: relative;
+}
+
+.pricenum {
+  position: absolute;
+  top: 0rpx;
+  right: 0rpx;
+  font-weight: 500;
+  font-size: 24rpx;
+}
+
+.discount {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 8rpx;
+}
+
+.mealsnum {
+  font-size: 24rpx;
+}
+
+.mealsnum {
+  margin-top: 28rpx;
+  width: 100%;
+  line-height: 30rpx;
+}
+
+.applybox {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right:0;
+  z-index: 5;
+  margin-top: 50rpx;
+  width: 100%;
+  height: 98rpx;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.pricenumsbox {
+  background: #333;
+  width: 70%;
+  display: flex;
+  display: -webkit-flex;
+  font-size: 30rpx;
+  color: #fff;
+  line-height: 98rpx;
+}
+
+.goapply {
+  width: 30%;
+  background: #ff4d2e;
+  font-size: 36rpx;
+  line-height: 98rpx;
+  text-align: center;
+  color: #fff;
+}
+
+.discountall {
+  width: 50%;
+  text-align: center;
+}
+
+.discountall span {
+  color: #ff4d2e;
+}
+
+.allpricebt {
+  text-align: right;
+  margin-right: 64rpx;
+}
+
+.maskbox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.6); */
+  z-index: 30;
+}
+
+.goods_address {
+  width: 100%;
+  height: 400rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  z-index: 34;
+}
+
+.goods_addresstite {
+  padding: 0rpx 24rpx;
+  background: #f2f2f2;
+  font-size: 32rpx;
+  color: #999;
+  height: 72rpx;
+  line-height: 72rpx;
+  position: relative;
+}
+
+.bottomcion {
+  width: 25rpx;
+  height: 14rpx;
+}
+
+.btcionbox {
+  position: absolute;
+  right: 24rpx;
+  top: 0rpx;
+  width: 100rpx;
+  text-align: right;
+}
+
+.add_goods {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ff4d2e;
+  line-height: 96rpx;
+  height: 96rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #fff;
+}
+
+.add_goodscion {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  border: 2rpx solid #fff;
+  display: inline-block;
+  border-radius: 50%;
+  margin-top: -8rpx;
+}
+
+.tshow {
+  display: block;
+}
+
+.thide {
+  display: none;
+}
+
+.noscroll {
+  height: 100%;
+}
+
+.quanbox {
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 24rpx;
+  color: #ff4d2e;
+  border: 1px solid #ff4d2e;
+  border-radius: 12rpx;
+  padding: 0px 22rpx;
+  position: relative;
+  margin-bottom: 12rpx;
+}
+
+.addressbox {
+  padding: 24rpx;
+}
+
+.quanifo {
+  position: absolute;
+  top: 0;
+  right: 24rpx;
+}
+
+.quancolor {
+  color: #999;
+  border: 1px solid #999;
+}
+
+.nogoods {
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 194rpx;
+  color: #999;
+}

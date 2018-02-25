@@ -1,0 +1,72 @@
+<!--局发布-->
+<view class='add-adress'>
+   <view class='items'>
+    <view class='title'>收货人</view>
+    <view>
+      <input type='text' placeholder-style="color:#999;font-size:12px;" placeholder='请输入收货人姓名' value='{{address.name}}'></input>
+    </view>
+    <view></view>
+  </view>
+  <view class='items'>
+    <view class='title'></view>
+    <view>
+      <radio-group class="radio-group" wx:if="{{address.sex=='male'}}">
+        <label class="radio">
+          <radio value="男" color='#ff4d2e' checked/>男
+        </label>
+        <label class="radio">
+          <radio value="女" color='#ff4d2e' />女
+        </label>
+      </radio-group>
+      <radio-group class="radio-group" wx:if="{{address.sex=='female'}}">
+        <label class="radio">
+          <radio value="男" color='#ff4d2e' />男
+        </label>
+        <label class="radio">
+          <radio value="女" color='#ff4d2e' checked/>女
+        </label>
+      </radio-group>
+      <radio-group class="radio-group" wx:else>
+        <label class="radio">
+          <radio value="男" color='#ff4d2e' />男
+        </label>
+        <label class="radio">
+          <radio value="女" color='#ff4d2e' checked/>女
+        </label>
+      </radio-group>
+    </view>
+  </view>
+
+  <view class='items'>
+    <view class='title'>联系电话</view>
+    <view>
+      <input type='text' placeholder-style="color:#999;font-size:12px;" placeholder='请输入联系电话' value='{{address.tel}}'></input>
+    </view>
+  </view>
+
+  <view class='items'>
+    <view class='title'>选择地区</view>
+    <view>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          <span wx:if="{{region.length}}">{{region[0]}}，{{region[1]}}，{{region[2]}}</span>
+          <span wx:else>{{address.address}}</span>
+        </view>
+      </picker>
+    </view>
+    <view>></view>
+  </view>
+  <view class='items'>
+    <view class='title'>详细地址</view>
+    <view>
+      <input type='text' placeholder-style="color:#999;font-size:12px;" placeholder='街道门牌信息' value='{{address.eare}}'></input>
+    </view>
+    <view></view>
+  </view> 
+</view>
+
+<view class='add-adress ad-btn-submit'>
+   <view class='release-btn' bindtap='send_release'>
+    确定
+  </view> 
+</view>

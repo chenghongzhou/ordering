@@ -1,0 +1,50 @@
+/* pages/orderDetail/orderDetail.wxss */
+page{
+  background: #eee;
+}
+.od-detail{
+  background:#fff;
+  padding:0 30rpx;
+  margin-bottom: 20rpx;
+}
+.od-pd{
+  padding-bottom:10rpx;
+}
+.od-detail .item{
+  padding:30rpx 0;
+  border-bottom:1px solid #e5e5e5;
+  overflow: hidden;
+  display: flex;
+}
+.od-detail .item .tlt{
+  font-size: 32rpx;
+  color:#666;
+  float: left;
+  flex: 1
+}
+.od-detail .item .con{
+  flex: 2;
+  font-size: 32rpx;
+}
+.od-detail .item .money{
+  flex: 0.5;
+  font-size: 32rpx;
+  
+}
+.od-detail .item-mg{
+padding-bottom: 0;
+border-bottom:0;
+}
+.od-detail .item .mcolor{
+  color:#ff4d2e;
+}
+.submit{
+  width:100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height:80rpx;
+  border:1px solid #999;
+  margin:20rpx 0;
+  text-align: center;
+  line-height: 80rpx;
+}

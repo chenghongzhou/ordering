@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index", 
+    "pages/personal/personal",    
+    "pages/goodsDetail/goodsDetail",
+    "pages/orderDetail/orderDetail",
+    "pages/placeOrder/placeOrder",
+    "pages/store/store",
+    "pages/ordered/ordered",
+    "pages/menu/menu",
+    "pages/address/address",
+    "pages/addAdress/addAdress",
+    "pages/discount/discount"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "爱订云",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "selectedColor": "#ff4d2e",
+    "color": "#fff",
+    "backgroundColor": "#333",
+    "list": [
+      {
+        "selectedIconPath": "/images/icon_home_selected.png",
+        "iconPath": "/images/icon_home_normal.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "/images/icon_indent_selected.png",
+        "iconPath": "/images/icon_indent_normal.png",
+        "pagePath": "pages/ordered/ordered",
+        "text": "订单"
+      },
+      {
+        "selectedIconPath": "/images/icon_mine_selected.png",
+        "iconPath": "/images/icon_mine_normal.png",
+        "pagePath": "pages/personal/personal",
+        "text": "我的"
+      }
+    ]
+  }
+}

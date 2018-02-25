@@ -1,0 +1,27 @@
+<view class="discountbox" wx:if="{{discountlist.length>0}}">
+<block wx:for="{{discountlist}}" wx:key="index">
+  <view class='discountlist'>
+    <image class='discountqaun' src='/images/discount.png'></image>
+    <view class='discountmian'>
+      <view class='discountnumbox'>
+        <view class='discountnum'><span style="font-size:50rpx">¥</span>{{item.price}}</view>
+        <view class='discounttype'>（{{item.types}}）</view>
+      </view>
+      <view class='discountifo'>
+        <view class='discountname'>{{item.name}}</view>
+        <view class='discounttd'>{{item.ifo}}</view>
+        <view class='discounttime'>有效期至  {{item.time}}</view>
+        <image src='/images/canuse.png' class='canuse' wx:if="{{item.canuse==true}}"></image>
+        <!-- <image src='/images/cantuse.png' class='canuse' wx:else></image> -->
+        <view wx:else></view>
+      </view>
+
+    </view>
+  </view>
+  </block>
+</view>
+
+<view class="discountbox" wx:else style='position:relative;padding:0px;'>
+  <image src='/images/nodiscount.png' class='nodiscountcion'></image>
+  <view class='discountts'>您当前还没有优惠券哦~</view>
+</view>

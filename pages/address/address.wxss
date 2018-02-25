@@ -1,0 +1,105 @@
+page{
+  background: #eeeeee;
+}
+.addressbox{
+  width: 100%;
+  height: 100%;
+}
+.addressmian{
+  height: 272rpx;
+  background: #ffffff;
+  padding: 0rpx 24rpx;
+  margin-bottom: 10rpx;
+}
+.addressifo{
+  width: 100%;
+  height: 196rpx;
+  border-bottom: 1px solid #cecece;
+  font-size: 28rpx;
+  color: #666666;
+  line-height: 40rpx;
+  line-height: 64rpx;
+}
+.addressifo image{
+  vertical-align: middle;
+  margin-right: 22rpx;
+}
+.addressdetail image{
+  width: 26rpx;
+  height: 30rpx;
+}
+.addressname image{
+  width: 32rpx;
+  height: 29rpx;
+}
+.addresstel image{
+  width: 26rpx;
+  height: 26rpx;
+}
+.address{
+  display: flex;
+  display: -webkit-flex;
+  font-size: 24rpx;
+  color: #666666;
+  line-height: 76rpx;
+  position: absolute;
+  right: 24rpx;
+}
+.edtbox{
+  margin-right: 34rpx;
+}
+.edtbox image{
+  width: 28rpx;
+  height: 28rpx;
+  vertical-align: middle;
+  margin-right: 12rpx;
+  margin-top: -4rpx;
+}
+.addressdet image{
+  margin-top: -4rpx;
+  margin-right: 12rpx;
+  width: 24rpx;
+  height: 28rpx;
+  vertical-align: middle;
+}
+.addressft{
+  font-size: 28rpx;
+  color: #666666;
+  width: 100%;
+  text-align: center;
+}
+.add_goods{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ff4d2e;
+  line-height: 96rpx;
+  height: 96rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #ffffff;
+  z-index: 5;
+}
+.add_goodscion{
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  border: 2rpx solid #ffffff; 
+  display: inline-block;
+  border-radius: 50%;
+  margin-top: -8rpx;
+}
+.nodiscountcion{
+  width: 311rpx;
+  height: 274rpx;
+  padding-top:360rpx; 
+ margin: 0px auto;
+ display: block;
+}
+.discountts{
+  color: #ff4d2e;
+  font-size: 40rpx;
+  text-align: center;
+  margin-top: 50rpx;
+}

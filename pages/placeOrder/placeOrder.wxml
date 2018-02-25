@@ -1,0 +1,108 @@
+<view class="orderbox">
+<view style='width:100%;height:100%;'>
+  <view class='orderifotp'>
+    <view class='checkthings'>
+      <view class='thingstitle'>已选商品</view>
+      <view class='thingsltbox'>
+        <view class='thingstyle'>{{ifos.types}} x {{ifos.typenum}}</view>
+        <view class='thingsall'>{{ifos.goods}}</view>
+      </view>
+      <view class='thingsltbox'>
+        <view class='typetitle'>选择优惠
+          <image class='checkcion' src='/images/right_cion.png'></image>
+        </view>
+        <view class='pricetype' bindtap='checkquan'>可选用优惠券
+          <view class='pricenum'>￥{{ifos.quan}}</view>
+        </view>
+      </view>
+      <view class='thingsltbox' style='border:0px;' wx:if="{{ifos.maintype==1}}">
+        <view class='typetitle' style='margin-top:0px;font-weight:600;'>
+          配送费
+          <view class='pricenum'>
+            <s class="discount">￥{{ifos.checkgoods[0]}}</s>￥{{ifos.checkgoods[1]}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='orderifotp'  style='margin-top:12rpx;padding-bottom:120rpx;'>
+    <view class='thingsltbox'>
+      <view class='typetitle' wx:if="{{ifos.maintype==1}}">预计送达时间</view>
+      <view class='typetitle' wx:if="{{ifos.maintype==0}}">预计自取时间</view>
+      <view class='pricetype'>
+        <input type='text' class='mealsnum' placeholder='' value='{{ifos.time}}'></input>
+        <image class='checkcion' src='/images/right_cion.png' style='top:0rpx;'></image>
+      </view>
+    </view>
+
+    <view class='thingsltbox' wx:if="{{ifos.maintype==1}}">
+      <view class='typetitle'>收货地址</view>
+      <view class='pricetype' bindtap='checkAddress'>选择收货地址
+        <image class='checkcion' src='/images/right_cion.png' style='top:0rpx;'></image>
+      </view>
+    </view>
+    <view class='thingsltbox' wx:if="{{ifos.maintype==0}}">
+      <view class='typetitle'>手机号码</view>
+      <view class='pricetype'>
+        <input type='text' class='mealsnum' placeholder='请输入自取人手机号码'></input>
+        <image class='checkcion' src='/images/right_cion.png' style='top:0rpx;'></image>
+      </view>
+    </view>
+
+    <view class='thingsltbox'>
+      <view class='typetitle'>用餐人数</view>
+      <input type='text' class='mealsnum' placeholder='请输入用餐人数'></input>
+    </view>
+
+    <view class='thingsltbox' style='border:0px;'>
+      <view class='typetitle'>备注信息</view>
+      <input class='mealsnum'  placeholder='请输入最多50字的备注信息（如需发票请扫描小票二维码）'></input>
+    </view>
+  </view>
+</view>
+  <view class='applybox'>
+    <view class='pricenumsbox'>
+      <view class='discountall'>已优惠
+        <span>￥{{ifos.discount}}</span>
+      </view>
+      <view class='discountall allpricebt'>合计
+        <span>￥{{ifos.price}}</span>
+      </view>
+    </view>
+    <view class='goapply'>去支付</view>
+  </view>
+</view>
+<!--  -->
+<!--  -->
+  <view class="{{isshow?'thide':'tshow'}} maskbox"> 
+    <view class="{{isaddress?'thide':'tshow'}} goods_address"> 
+     <view class='goods_addresstite'>选择收获地址
+      <view class='btcionbox' bindtap='colseaddress'>
+        <image src='/images/bottom_cion.png' class='bottomcion'></image>
+      </view>
+    </view>
+    <view class='addressbox'>
+      <view class='nogoods'>暂无库存</view>
+    </view>
+    <view class='add_goods' bindtap='gotoAdress'>
+      <image src='/images/add.png' class='add_goodscion'></image> 新增收货地址
+    </view> 
+   </view>  
+ </view>  
+
+ <view class="{{quanshow?'thide':'tshow'}} goods_address">
+  <view class='goods_addresstite'>已选产品
+    <view class='btcionbox' bindtap='colseaddress'>
+      <image src='/images/bottom_cion.png' class='bottomcion' bindtap='colseaddress'></image>
+    </view>
+  </view>
+  <view class='addressbox'>
+    <view class='quanbox'>15元新人券
+      <view class='quanifo'>( 不与特价商品同享 )</view>
+    </view>
+
+    <view class='quanbox quancolor'>15元新人券
+      <view class='quanifo'>( 不与特价商品同享 )</view>
+    </view>
+  </view>
+</view> 

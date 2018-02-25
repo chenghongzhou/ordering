@@ -1,0 +1,39 @@
+/**index.wxss**/
+
+.container {
+  width:100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+.slide-image{
+  width:100%;
+  height:655rpx;
+}
+.opts{
+  width:100%;
+  height:auto;
+  padding: 30rpx 0;
+  overflow: hidden;
+}
+.opts .item{
+  width: 48%;
+  height: 108rpx;
+  background: #ff4d2e;
+  border-radius: 8rpx;
+  color:#fff;
+  font-size: 36rpx;
+  line-height: 108rpx;
+  text-align: center; 
+}
+.opts .item:nth-child(1){
+  float: left;
+}
+.opts .item:nth-child(2){
+  float: right;
+}
+.ad{
+  width:100%;
+  height:150rpx;
+  background: #000;
+}

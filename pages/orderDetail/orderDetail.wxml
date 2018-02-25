@@ -1,0 +1,40 @@
+<!--pages/orderDetail/orderDetail.wxml-->
+<view class='od-detail'>
+  <view class='item'>
+    <view class='tlt'>已选商品</view>
+    <view class='con'>乐多多小吃盘 x1</view>
+    <view class='money'>¥ 32</view>
+  </view>
+  <view class='item item-mg'>
+    <view class='tlt'>已优惠</view>
+    <view class='con'></view>
+    <view class='money'>¥ 0</view>
+  </view>
+  <view class='item'>
+    <view class='tlt'>已支付</view>
+    <view class='con'></view>
+    <view class='money mcolor'>¥ 32</view>
+  </view>
+  <view class='item'>
+    <view class='tlt'>备注信息</view>
+    <view class='con'>无</view>
+  </view>
+</view>
+
+<view class='od-detail od-pd'>
+  <view class='item item-mg'>
+    <view class='tlt'>用餐人数</view>
+    <view class='con'>3</view>
+  </view>
+  <view class='item item-mg'>
+    <view class='tlt'>桌牌号码</view>
+    <view class='con'>c16</view>
+  </view>
+   <view class='item item-mg'>
+    <view class='tlt'>下单时间</view>
+    <view class='con'>2018-01-02-12  19:50:30</view>
+  </view>
+  <view class='submit'>
+    联系商家
+  </view>
+</view>

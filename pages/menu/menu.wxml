@@ -1,0 +1,149 @@
+<!--菜单-->
+<view class="menu">
+  <view class="menu-panel" hidden="{{isShow}}" style="height:{{winHeight}}px">
+    <!--分类菜单-->
+    <view class="menu-item">
+      <scroll-view scroll-y style="height:{{winHeight-48}}px">
+        <view data-num="0" class="menu-tlt {{_num==0?'active':''}}" bindtap="changeMenu">强烈推荐</view>
+        <view data-num="1" class="menu-tlt {{_num==1?'active':''}}" bindtap="changeMenu">套餐</view>
+        <view data-num="2" class="menu-tlt {{_num==2?'active':''}}" bindtap="changeMenu">小吃</view>
+        <view data-num="3" class="menu-tlt {{_num==3?'active':''}}" bindtap="changeMenu">下午茶</view>
+        <view data-num="4" class="menu-tlt {{_num==4?'active':''}}" bindtap="changeMenu">饮品</view>
+        <view data-num="5" class="menu-tlt {{_num==5?'active':''}}" bindtap="changeMenu">强烈推荐</view>
+        <view data-num="6" class="menu-tlt {{_num==6?'active':''}}" bindtap="changeMenu">强烈推荐</view>
+      </scroll-view>
+    </view>
+    <!--分类列表-->
+    <view class="menu-item">
+      <view class='menu-con'>
+        <view class='mc mc-l' bindtap='go_goodsDetail'>
+          <image style='width:160rpx;height:160rpx;' src='/images/banner.png'></image>
+        </view>
+        <view class='mc mc-r'>
+          <p>乐多多小吃拼盘</p>
+          <i>含墨墨鸡鸡块／曲奇薯／回甘...</i>
+          <view class='mc-q'>
+            <span>￥30</span>起
+            <view class='btn'>
+              <view class='sel' bindtap='selectSpec'>选规格</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='menu-con'>
+        <view class='mc mc-l'  bindtap='go_goodsDetail'>
+          <image style='width:160rpx;height:160rpx;' src='/images/banner.png'></image>
+        </view>
+        <view class='mc mc-r'>
+          <p>乐多多小吃拼盘</p>
+          <i>含墨墨鸡鸡块／曲奇薯／回甘...</i>
+          <view class='mc-q'>
+            <span>￥30</span>起
+            <view class='btn'>
+              <!-- <view class='sel' bindtap='selectSpec'>选规格</view> -->
+              <!-- <view class="b-q reduce" bindtap='reduce' wx:if="{{count>0}}">-</view> -->
+              <image src='/images/jian.png' class="b-q reduce" bindtap='reduce' wx:if="{{count>0}}"></image>
+              <view class='b-q' wx:if="{{count>0}}">{{count}}</view>
+              <image src='/images/jia.png' class="b-q add" bindtap='add'></image>
+              <!-- <view class="b-q add" bindtap='add'>+</view> -->
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="calc">
+    <view class='item'  bindtap='showSel'>
+      <view class='it-cart'>
+        <image src='/images/cart_1.png' class='crad'></image>
+        <span>1</span>
+      </view>
+      <view class='it-num'>
+        <span>总计</span>
+        <i>￥32</i>
+      </view>
+    </view>
+    <view class='item' bindtap='togoplace'>
+      去结算
+    </view>
+  </view>
+
+  <!--规格-->
+  <view class='select-spec' hidden="{{!show_spec}}">
+    <view class='spec-con'>
+      <view class='sp-tlt'>
+        <view class='tl'>
+          <image src='/images/banner.png'></image>
+        </view>
+        <view class='tl'>
+          <p>乐多多小吃拼盘</p>
+          <p>￥30</p>
+        </view>
+      </view>
+      <view>
+        <scroll-view scroll-y style="height:300px">
+          <view class='sp-con'>
+            <p class="sc-tlt">披萨（任选两项)</p>
+            <view class='sc-btn'>
+              <!-- <i class="active">清椰榴莲</i> bindtouchstart-->
+              <block wx:for="{{orderlist.maingoods}}" wx:key="index">
+               <i bindtap="checkmaingoods" class='{{item.mgoods?"active":""}}' id="{{index}}" bindtouchstart="touchStart" bindtouchend="touchEnd">{{item.text}}</i>
+              </block>
+            </view>
+          </view>
+          <view class='sp-con sp-food'>
+            <p class="sc-tlt">小吃</p>
+            <view class='sc-btn'>
+              <block wx:for="{{orderlist.snack}}" wx:key="index">
+                <p>
+                  <i bindtap="checksnack" class='{{item.mgoods?"active":""}}' id="{{index}}" bindtouchstart="touchStart" bindtouchend="touchEnd">{{item.text}}</i>
+                </p>
+              </block>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+      <view class='submit-btn' bindtap='submit_ok'>我选好了</view>
+    </view>
+  </view>
+
+  <!--已选产品-->
+  <view class='already-sel' hidden='{{!show_already}}' style="height:{{winHeight-48}}px">
+    <view style='width:100%;height:{{winHeight-48-110}}px;' catchtap="close" ></view>
+    <view class='sel-list'>
+      <view class='sl-tlt'>
+        <text>已选产品</text>
+        <image src='/images/del.png'></image>
+      </view>
+      <scroll-view scroll-y style="height:68px">
+        <view class='lists'>
+          <view class='txt'>
+            <text class='title'>乐多多小吃拼盘</text>
+            <text class='menoy'>￥32</text>
+          </view>
+          <view class='btn'>
+            <image src='/images/jian.png' class="b-q reduce" bindtap='reduce' wx:if="{{count>0}}"></image>
+              <view class='b-q' wx:if="{{count>0}}">{{count}}</view>
+              <image src='/images/jia.png' class="b-q add" bindtap='add'></image>
+          </view>
+        </view>
+         <view class='lists'>
+          <view class='txt'>
+            <text class='title'>乐多多小吃拼盘</text>
+            <text class='menoy'>￥32</text>
+          </view>
+          <view class='btn'>
+            <!-- <view class="b-q reduce">-</view>
+            <view class='b-q'>{{count}}</view>
+            <view class="b-q add" catchtap='add'>+</view> -->
+
+            <image src='/images/jian.png' class="b-q reduce" bindtap='reduce' wx:if="{{count>0}}"></image>
+              <view class='b-q' wx:if="{{count>0}}">{{count}}</view>
+              <image src='/images/jia.png' class="b-q add" bindtap='add'></image>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

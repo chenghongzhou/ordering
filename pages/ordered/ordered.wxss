@@ -1,0 +1,79 @@
+page{
+  background: #eeeeee;
+}
+.orderedbox{
+  height: 207rpx;
+  background: #ffffff;
+  padding: 30rpx 24rpx;
+  margin-bottom: 12rpx;
+}
+.ordered_address{
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+ 
+}
+.orderifos{
+ border-bottom: 1px solid #e5e5e5;
+}
+.ordered_address image{
+  width: 26rpx;
+  height: 26rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.ordertype{
+  font-size: 28rpx;
+  color: #666666;
+  margin: 20rpx 0rpx 30rpx 36rpx;
+  position: relative;
+  line-height: 24rpx;
+}
+.ordertype span{
+  font-size:28rpx;
+  color: #ff4d2e; 
+  position: absolute;
+  right: 0;
+  top: 0rpx;
+}
+.orderedbtm{
+  position: relative;
+}
+.orderbm_details{
+  font-size:  28rpx;
+  color: #666666;
+  margin: 26rpx 0px 0px 36rpx;
+}
+.orderbm_details span{
+  color: #333333;
+  margin-left:18rpx;
+}
+.seedetials{
+  width: 138rpx;
+  height: 38rpx;
+  line-height: 38rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #333333;
+  border: 1px solid #999999;
+  border-radius: 6rpx;
+  position: absolute;
+  right: 0px;
+  top: 0rpx;
+}
+.discountbox{
+  padding: 40rpx 24rpx 0 24rpx;
+}
+.nodiscountcion{
+  width: 311rpx;
+  height: 274rpx;
+  padding-top:360rpx; 
+ margin: 0px auto;
+ display: block;
+}
+.discountts{
+  color: #ff4d2e;
+  font-size: 40rpx;
+  text-align: center;
+  margin-top: 50rpx;
+}

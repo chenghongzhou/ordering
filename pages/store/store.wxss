@@ -1,0 +1,139 @@
+page{
+  background: #fff;
+}
+.check_address{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  height: 84rpx;
+  background: #464646;
+  padding: 12rpx 24rpx 0rpx 24rpx;
+  display: flex;
+  display: -webkit-flex;
+}
+.addressmian{
+  width: 60%;
+  height: 72rpx;
+  background: #ff4d2e;
+  line-height: 72rpx;
+  font-size: 32rpx;
+  color: #ffffff;
+  border-radius: 10rpx;
+  position: relative;
+}
+.addressmian image{
+  width: 26rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  margin: 0px 14rpx;
+}
+.addresslistcion{
+  position: absolute;
+  right: 18rpx;
+  top: 30rpx;
+  width: 0;
+  height: 0;
+  border-top:10rpx solid #ffffff;
+  border-left: 10rpx solid transparent;
+  border-right: 10rpx solid transparent;
+}
+.findaddress{
+  margin-left: 1%;
+  width: 39%;
+    height: 72rpx;
+  background: #fff;
+  line-height: 72rpx;
+  font-size: 32rpx;
+  color: #ffffff;
+  border-radius: 10rpx;
+  position: relative;
+}
+.findaddress image{
+  width: 28rpx;
+  height: 26rpx;
+  vertical-align: middle;
+  margin:0px 12rpx;
+}
+.c_adipt{
+  position: absolute;
+  left: 46rpx;
+  top: 10rpx;
+  display: inline-block;
+  padding-right: 55rpx;
+}
+.ssaddress{
+  position: absolute;
+  left: 52rpx;
+  top: 0px;
+  height: 72rpx;
+  color: #333;
+  padding-right:28rpx; 
+}
+.meunbox{
+  padding: 0px 24rpx 20rpx 24rpx;
+  position: relative;
+}
+.meunbox{
+  border-bottom: 1px solid #c1c1c1;
+
+}
+.meunname{
+  font-size:30rpx;
+  line-height: 60rpx;
+  margin: 20rpx 0px 0px 0px;
+}
+.meuncolor{
+    color: #ff4d2e; 
+}
+.meuncolor1{
+    color: #333333; 
+}
+.meunaddressdetil{
+  font-size: 24rpx;
+  color: #666666;
+    line-height: 34rpx;
+  margin: 20rpx 8rpx 0 0;
+}
+.address_cion{
+  width: 26rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  margin-right: 8rpx;
+}
+.meuntime{
+  width: 26rpx;
+  height: 26rpx;
+  vertical-align: middle;
+  margin-right: 8rpx;
+}
+.addmeun{
+  width: 100%;
+  background: #ff4d2e;
+  text-align: center;
+  color: #ffffff;
+  line-height: 72rpx;
+  height: 72rpx;
+  margin-top: 22rpx;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+}
+.meun_cion{
+  position: absolute;
+  right: 24rpx;
+  top: 50%;
+  margin-top: -54rpx;
+}
+.cantgive{
+  width: 108rpx;
+  height: 82rpx;
+
+}
+.meunjh{
+  width: 14rpx;
+  height: 25rpx;
+  margin-left: 16rpx;
+  vertical-align: top;
+  margin-top: 24rpx;
+}

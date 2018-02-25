@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper style='height:655rpx;' indicator-active-color="#ff4d2e" indicator-dots="{{indicatorDots}}" circular="{{circular}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" mode='aspectFill' class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='opts'>
+    <view class='item' bindtap='goStore'>外卖</view>
+    <view class='item' bindtap='goStore'>自取</view>
+  </view>
+  <view class='ad'>
+  </view>
+</view>

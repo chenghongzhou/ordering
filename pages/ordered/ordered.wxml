@@ -1,0 +1,25 @@
+<view style='position:relative;width:100%;height:100%;' wx:if="{{ordered.length}}">
+  <block wx:for="{{ordered}}" wx:key="{{index}}">
+    <view class='orderedbox'>
+      <view class='orderifos'>
+        <view class='ordered_address'>
+          <image src='/images/order.png'></image>{{item.address}} {{item.store}}
+        </view>
+        <view class='ordertype'>{{item.types}}
+          <span>x {{item.num}}</span>
+        </view>
+      </view>
+      <view class='orderedbtm'>
+        <view class='orderbm_details'>共1件商品，实付
+          <span>¥ {{item.price}}</span>
+        </view>
+        <view class='seedetials' bindtap='godetials'>查看详情</view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class="discountbox" wx:else style='position:relative;padding:0px;'>
+  <image src='/images/nodiscount.png' class='nodiscountcion'></image>
+  <view class='discountts'>您当前还没有订单哦~</view>
+</view>

@@ -1,0 +1,37 @@
+<!--pages/goodsDetail/goodsDetail.wxml-->
+<!--商品详情-->
+<view class='goods'>
+  <scroll-view scroll-y style="height:{{winHeight-60}}px">
+    <view class='goods-img'>
+      <image src='/images/banner.png'></image>
+    </view>
+    <view class='addCart'>
+      <view class='cart-l'>
+        <text>乐多多小吃拼盘</text>
+        <text>¥ 30 </text>
+      </view>
+      <view class='cart-r'>
+        <image src='/images/cart.png'></image>
+        加入购物车
+      </view>
+    </view>
+    <view class='tips'>
+      含墨墨鸡鸡块／曲奇薯／拉丁烤肠，多种小吃适合选择困难星人。
+    </view>
+    </scroll-view>
+</view>
+
+<view class="calc">
+  <view class='item'>
+    <view class='it-cart'>
+      <image src='/images/cart_1.png' class='crad'></image>
+    </view>
+    <view class='it-num'>
+      <span>总计</span>
+      <i>￥32</i>
+    </view>
+  </view>
+  <view class='item'>
+    去结算
+  </view>
+</view>

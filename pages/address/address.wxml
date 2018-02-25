@@ -1,0 +1,28 @@
+<view style='position:relative;width:100%;height:100%;'>
+<view class="addressbox" wx:if="{{address.length>0}}">
+<block wx:for="{{address}}" wx:key="index">
+  <view class='addressmian'>
+    <view class='addressifo'>
+      <view class='addressdetail'><image src='/images/address.png' ></image>{{item.address}}</view>
+      <view class='addressname'><image src='/images/people.png' ></image>{{item.name}}    <span wx:if="{{item.sex=='male'}}">先生</span><span wx:else>女士</span></view>
+      <view class='addresstel'><image src='/images/tel.png' ></image>{{item.tel}}</view>
+    </view>
+    <view class='address'>
+      <view class='edtbox' bindtap='addressAdd' id="{{index}}"><image src='/images/edt.png' ></image>编辑</view>
+      <view class='addressdet' bindtap='deleteBtn'><image src='/images/dalate.png' ></image>删除</view>
+    </view>
+  </view>
+  </block>
+  <view class='addressft' style='margin-top:30rpx'>没有更多了</view>
+</view>
+
+<view class="addressbox" wx:else>
+    <image src='/images/nodiscount.png' class='nodiscountcion'></image>
+  <view class='discountts'>还未添加收货地址哦~</view>
+</view>
+
+
+<view class='add_goods' bindtap='go_addAdress'>
+      <image src='/images/add.png' class='add_goodscion'></image> 新增收货地址
+    </view>
+</view>
